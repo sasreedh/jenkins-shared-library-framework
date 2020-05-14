@@ -1,12 +1,5 @@
 @Library('dcube-library@master') _
 
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                HelloWorld 'testing'
-            }
-        }
-    }
-}
+stage('Demo') {
+    echo 'Hello world'
+    sayHello 'Dave'
